@@ -2,5 +2,5 @@
 
 void bar()
 {
-	printf("bar func()\n");
+	printf("bar()\n");
 }
