@@ -1,5 +1,9 @@
 # makefile_study
-- 참고 : [Make 튜토리얼 따라하기](https://www.tuwlab.com/ece/27193)
+- Makefile 공부
+
+## 참고 사이트 
+- [Make 튜토리얼 따라하기](https://www.tuwlab.com/ece/27193)
+- [GNU Make 공식 매뉴얼](https://www.gnu.org/software/make/manual/make.html)
 
 ## 실습환경
 - Ubuntu 20.04.4 LTS
