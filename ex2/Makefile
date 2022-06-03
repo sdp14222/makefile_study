@@ -13,3 +13,6 @@ main.o : main.cc foo.h bar.h
 
 main.out : foo.o bar.o main.o
 	$(CC) $(CXXFLAGS) $(OBJS) -o main.out 
+
+clean :
+	rm -f $(OBJS) main.out
