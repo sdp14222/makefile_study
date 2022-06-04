@@ -6,10 +6,13 @@ CXXFLAGS = -Wall -O2
 # Linker Options
 LDFLAGS = 
 
-# Source File Directory
+# Header File Path
+INCLUDE = -Iinclude/
+
+# Source File Path 
 SRC_DIR = ./src
 
-# Object File Directory
+# Object File Path
 OBJ_DIR = ./obj
 
 # Execute File name
@@ -33,7 +36,7 @@ DEPS = $(OBJECTS:.o=.d)
 all: main
 
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.cc
-	$(CC) $(CXXFLAGS) -c $< -o $@ -MD $(LDFLAGS)
+	$(CC) $(CXXFLAGS) $(INCLUDE) -c $< -o $@ -MD $(LDFLAGS)
 
 $(TARGET) : $(OBJECTS)
 	$(CC) $(CXXFLAGS) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
